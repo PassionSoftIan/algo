@@ -11,10 +11,25 @@ for i in range(Test_case):
         while N % j == 0:
             N = N / j
             count[j] += 1
-    count_fin = []
-    for k in prime:
-        count_fin.append(count[k])
-    print(f'#{i+1}', *count_fin)
+    result = [count[k] for k in prime]
+
+    print(f'#{i+1}', *result)
+
+
+# Test_case = int(input())
+
+# for i in range(Test_case):
+#     N = int(input())
+#     prime = [2, 3, 5, 7, 11]
+#     count = [0] * 12
+#     for j in prime:
+#         while N % j == 0:
+#             N = N / j
+#             count[j] += 1
+#     count_fin = []
+#     for k in prime:
+#         count_fin.append(count[k])
+#     print(f'#{i+1}', *count_fin)
 
 
 
@@ -43,6 +58,5 @@ for i in range(Test_case):
 #         count_11 += 1
 #
 #     count_fin = [count_2, count_3, count_5, count_7, count_11]
-#     print(count_fin)
 #
 #     print(f'#{i+1}', *count_fin)
