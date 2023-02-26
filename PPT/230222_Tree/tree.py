@@ -47,12 +47,12 @@ tree = [[0] * 3 for _ in range(V+1)]
 for i in range(E):
     p, c = edge[i*2], edge[i*2+1]
     print(p, c)
-    # if left[p] == 0:    # 아직 왼쪽 자식이 없으면
-    #     left[p] = c     # p번의 왼쪽 자식 c
-    #
-    # else:               #왼쪽에 자식이 있으면
-    #     right[p] = c
-    # parent[c] = p
+    if left[p] == 0:    # 아직 왼쪽 자식이 없으면
+        left[p] = c     # p번의 왼쪽 자식 c
+
+    else:               #왼쪽에 자식이 있으면
+        right[p] = c
+    parent[c] = p
 
     if tree[p][0] == 0:
         tree[p][0] = c
