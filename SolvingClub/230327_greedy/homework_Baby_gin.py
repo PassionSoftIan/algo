@@ -11,6 +11,8 @@ def backtracking(depth):
         return
 
     for i in range(6):
+        if char == 'True':
+            break
         if visited[i] == 0:
             result.append(lst[i])
             visited[i] = 1
