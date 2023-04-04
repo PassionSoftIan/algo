@@ -1,8 +1,10 @@
 import sys
 sys.stdin = open('bio_isolation_input.txt')
 
+
 dy = [0, -1, 1, 0, 0]
 dx = [0, 0, 0, -1, 1]
+
 
 def experiment(stack, second):
     global result
@@ -92,6 +94,7 @@ Test_case = int(input())
 for tc in range(1, Test_case+1):
     N, M, K = map(int, input().split())
     # N 셀의 개수, M 격리 시간, K 미생물 군집 개수
+    global result
 
     bio_lst_0 = []
     bio_lst_1 = []
