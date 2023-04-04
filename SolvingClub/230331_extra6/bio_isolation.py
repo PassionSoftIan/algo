@@ -111,26 +111,26 @@ for tc in range(1, Test_case+1):
         else:
             experiment(bio_lst_1, i)
 
-    # print(bio_lst_1)
-    #
-    # print('---------------arr')
-    #
-    # for i in arr:
-    #     print(i)
-    #
-    # print('---------------final_arr')
-    #
-    # for i in final_arr:
-    #     print(i)
-    #
-    # print('---------------visited')
-    #
-    # for i in visited:
-    #     print(i)
-    #
-    # print('---------------info')
-    #
-    # for i in info:
-    #     print(i)
+    print(bio_lst_1)
+
+    print('---------------arr')
+
+    for i in arr:
+        print(i)
+
+    print('---------------final_arr')
+
+    for i in final_arr:
+        print(i)
+
+    print('---------------visited')
+
+    for i in visited:
+        print(i)
+
+    print('---------------info')
+
+    for i in info:
+        print(i)
 
     print(f'#{tc} {result}')
